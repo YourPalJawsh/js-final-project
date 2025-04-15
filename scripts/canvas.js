@@ -4,11 +4,16 @@ const saveBtn = document.querySelector("#saveBtn");
 const clearBtn = document.querySelector("#clearBtn");
 const colorPicker = document.querySelector("#colorPicker");
 
+// for dev
+const gridGen = document.querySelector("#gridGen");
+
 let currentColor = colorPicker.value;
 
 // Event listeners
 clearBtn.addEventListener("click", clearGrid);
 colorPicker.addEventListener("input", (event) => changeColor(event));
+gridGen.addEventListener("click", renderGrid);
+
 
 // Color picker
 function changeColor(c){
@@ -17,13 +22,29 @@ function changeColor(c){
 }
 
 // Painting Pixels
-function paint(pixel){ 
+function paint(p){ 
 
 }
 
 // Render grid
 function renderGrid(){
-    
+    for (let i = 0; i < 16; i++){
+        let tempPix = makePixel(i);
+        console.log(tempPix);
+        document.getElementById("canvas").appendChild(tempPix);
+    }
+}
+
+function makePixel(i){
+    let pixel = document.createElement("button");
+    pixel.id = `p${i}`;
+    pixel.style.height = "40px";
+    pixel.style.width = "40px";
+    pixel.style.backgroundColor = "#FFFFFF";
+    pixel.style.margin = "0px";
+    pixel.style.padding = "0px";
+    pixel.addEventListener("click", paint(pixel));
+    return pixel;
 }
 
 // Clear grid
@@ -40,4 +61,3 @@ function clearGrid(){
 // save art
 
 
-renderGrid();

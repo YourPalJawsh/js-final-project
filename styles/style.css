@@ -10,19 +10,42 @@ DARK ORANGE
 
 ORANGE
 #DCA06D
+
+
 */
 
 h1 {
+    display: flex;
+    justify-content: center;
     color: #4F1C51;
     font-family: 'Silkscreen', monospace;
     padding: 5px;
 }
 
+#wrapperOver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#wrapperUnder {
+    align-content: center;
+}
+
+#canvas {
+    width: 640px;
+    height: 640px;
+    background-color: #cdcdcd;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 #menu-bar {
     align-self: center;
     display: flex;
-    margin: 5px;
-    padding: 10px;
 }
 
 #colorPicker {
