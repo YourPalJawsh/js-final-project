@@ -1,0 +1,70 @@
+/* 
+DARK PURPLE
+#210F37
+
+PURPLE
+#4F1C51
+
+DARK ORANGE
+#A55B4B
+
+ORANGE
+#DCA06D
+*/
+
+h1 {
+    color: #4F1C51;
+    font-family: 'Silkscreen', monospace;
+    padding: 5px;
+}
+
+#menu-bar {
+    align-self: center;
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+}
+
+#colorPicker {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#colorPicker:hover {
+    background-color: #cdcdcd;
+}
+
+#clearBtn {
+    font-family: "ＭＳ Ｐゴシック", monospace;
+    font-size: medium;
+    font-weight: bold;
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#clearBtn:hover {
+    color: #F8F4E1;
+    background-color: #4F1C51;
+}
+
+#saveBtn {
+    font-family: "ＭＳ Ｐゴシック", monospace;
+    font-size: medium;
+    font-weight: bold;
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#saveBtn:hover {
+    color: #F8F4E1;
+    background-color: #4F1C51;
+}
