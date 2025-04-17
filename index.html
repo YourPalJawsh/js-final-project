@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="styles/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="renderGrid()">
     <h1>Pixel Art Canvas</h1>
     
     <div id="wrapperOver">
-        <div id="wrapperLower">
+        <div id="wrapperLeft">
             <div id="canvas"></div>
             
         </div>
-        <div id="menu-bar">
-            <input type="color" id="colorPicker"/>
-            <button id="saveBtn">Save</button>
-            <button id="clearBtn">Clear</button>
-            <button id="gridGen">gen grid</button>
+        <div id="wrapperRight">
+            <div id="menu-bar">
+                <input type="color" id="colorPicker"/>
+                <button id="saveBtn">Save Canvas</button>
+                <button id="clearBtn">Clear Canvas</button>
+                <button id="saveCol">Save Color</button>
+                <button id="clearCol">Clear Colors</button>
+            </div>
+            <div id="colBar">
+                <h3>Colors</h3>
+                <div id="swatches"></div>
+            </div>
         </div>
     </div>
+    
     
     
   <script src="scripts/canvas.js"></script>

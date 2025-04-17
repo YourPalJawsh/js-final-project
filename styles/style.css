@@ -6,13 +6,17 @@ PURPLE
 #4F1C51
 
 DARK ORANGE
-#A55B4B
+#BE3D2A
 
 ORANGE
 #DCA06D
 
 
 */
+
+body {
+    background-color: #cdcdcd;
+}
 
 h1 {
     display: flex;
@@ -22,6 +26,22 @@ h1 {
     padding: 5px;
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: "ＭＳ Ｐゴシック", monospace;
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#swatches button {
+    border: none;
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+}
+
 #wrapperOver {
     display: flex;
     justify-content: center;
@@ -29,14 +49,17 @@ h1 {
     text-align: center;
 }
 
-#wrapperUnder {
-    align-content: center;
+#colBar {
+    background-color: #F0F0F0;
 }
 
 #canvas {
-    width: 640px;
-    height: 640px;
-    background-color: #cdcdcd;
+    display: grid;
+    grid-template-columns: repeat(16, 35px);
+    grid-template-rows: repeat(16, 35px);
+    width: 560px;
+    height: 560px;
+    background-color: #ffffff;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
@@ -51,7 +74,6 @@ h1 {
 #colorPicker {
     width: 40px;
     height: 40px;
-    padding: 5px;
     border: none;
     cursor: pointer;
 }
@@ -64,9 +86,8 @@ h1 {
     font-family: "ＭＳ Ｐゴシック", monospace;
     font-size: medium;
     font-weight: bold;
-    width: 60px;
+    width: 65px;
     height: 40px;
-    padding: 5px;
     border: none;
     cursor: pointer;
 }
@@ -80,14 +101,43 @@ h1 {
     font-family: "ＭＳ Ｐゴシック", monospace;
     font-size: medium;
     font-weight: bold;
-    width: 60px;
+    width: 65px;
     height: 40px;
-    padding: 5px;
     border: none;
     cursor: pointer;
 }
 
 #saveBtn:hover {
+    color: #F8F4E1;
+    background-color: #4F1C51;
+}
+
+#saveCol {
+    font-family: "ＭＳ Ｐゴシック", monospace;
+    font-size: medium;
+    font-weight: bold;
+    width: 65px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#saveCol:hover {
+    color: #F8F4E1;
+    background-color: #4F1C51;
+}
+
+#clearCol {
+    font-family: "ＭＳ Ｐゴシック", monospace;
+    font-size: medium;
+    font-weight: bold;
+    width: 65px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#clearCol:hover {
     color: #F8F4E1;
     background-color: #4F1C51;
 }
